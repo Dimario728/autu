@@ -12,19 +12,6 @@ int main() {
 		return 1;
 	}
 
-	int arr[maxSize];
-	std::cout << "Введите элементы массива:\n";
-	for (int i = 0; i < n; ++i) {
-		std::cin >> arr[i];
-	}
-
-	selectionSort(arr, n);
-
-	std::cout << "Отсортированный массив:\n";
-	for (int i = 0; i < n; ++i) {
-		std::cout << arr[i] << " ";
-	}
-	std::cout << std::endl;
 
 	return 0;
 }
