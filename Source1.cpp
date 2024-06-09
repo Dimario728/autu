@@ -10,21 +10,4 @@ int main() {
 	if (n > maxSize || n <= 0) {
 		std::cout << "Ошибка: неверный размер массива\n";
 		return 1;
-	}
-
-	int arr[maxSize];
-	std::cout << "Введите элементы массива:\n";
-	for (int i = 0; i < n; ++i) {
-		std::cin >> arr[i];
-	}
-
-	selectionSort(arr, n);
-
-	std::cout << "Отсортированный массив:\n";
-	for (int i = 0; i < n; ++i) {
-		std::cout << arr[i] << " ";
-	}
-	std::cout << std::endl;
-
-	return 0;
 }
